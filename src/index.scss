@@ -1,0 +1,154 @@
+$primary: #150080;
+$bg: rgb(18, 34, 61);
+$bg-accent: #e7e8e9;
+$disabled: rgb(45, 45, 45);
+$foreground: rgb(255, 255, 255);
+
+body {
+        font-family: monospace;
+        background: $bg;
+        color: $foreground;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0 30px;
+        height: 100vh;
+}
+
+.quiz-container {
+    width: 500px;
+    background: $bg;
+    border-radius: 4px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+
+    .active-question {
+        font-size: 32px;
+        font-weight: 500;
+        color: $primary;
+    }
+
+    .total-question {
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .progress-container{
+        display: flex;
+    }
+
+    .progress-bar {
+        width: 90%;
+        margin: 10px 0;
+        margin-top: 22px;
+        height: 10px;
+        background: gray;
+    }
+
+    h3 {
+        width: 10%;
+        margin-left: 15px;
+        font-size: 15px;
+    }
+
+    ul {
+        margin-top: 25px;
+        margin-left: -40px;
+
+        li {
+            text-decoration: none;
+            list-style: none;
+            color: $foreground;
+            font-size: 16px;
+            background: rgb(88, 100, 119);
+            padding: 11px;
+            margin-top: 15px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        li:hover {
+            background-color: #394A62
+        }
+        
+        li:active {
+            border: 2px solid #e2c47c;
+        }
+
+        .answerSelected {
+            border: 2px solid rgb(221, 197, 133);
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .continue {
+        background: rgb(221, 197, 133);
+        font-size: 18px;
+        color: $bg;
+        padding: 10px 42px;
+        outline: none;
+        border: none;
+        margin-top: 15px;
+        cursor: pointer;
+        width: 100%;
+
+        &:disabled {
+            background-color: rgba(221, 197, 133, 0.6);
+            color: $disabled;
+            cursor: not-allowed;
+        }
+    }
+
+    .skip {
+        background: rgb(18, 34, 61);
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        padding: 10px 42px;
+        margin-top: 15px;
+        cursor: pointer;
+        width: 100%;
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .intro-container button {
+        padding: 10px 20px;
+        height: 100px;
+        width: 300px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        background-color: #556479;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      
+      .intro-container button:hover {
+        background-color: #394A62
+    }
+    
+    .intro-container button:active {
+        border: 2px solid #e2c47c;
+    }
+    
+    body {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    span {
+        font-style: italic;
+    }
+}

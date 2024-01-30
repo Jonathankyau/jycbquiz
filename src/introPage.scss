@@ -1,0 +1,88 @@
+/* introPage.scss */
+
+.intro-container {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-statement {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 50%;
+  }
+
+  .goal-container {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 100px;
+  }
+  
+  .intro-container button {
+    padding: 10px 20px;
+    height: 100px;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #556479;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .intro-container button:hover {
+    background-color: #394A62
+}
+
+.intro-container button:active {
+    border: 2px solid #e2c47c;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 46px;
+    width: 100%;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    width: 100%;
+}
+  
+h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+span {
+    font-style: italic;
+}
