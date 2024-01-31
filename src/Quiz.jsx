@@ -105,6 +105,7 @@ const startQuiz = () => {
   }
 
   const progress = ((currentQuestion + 1) / questions.length) * 100;
+  const isQuizCompleted = currentQuestion >= questions.length;
 
   return (
     <div>
@@ -113,6 +114,7 @@ const startQuiz = () => {
         ) : (
     <div className="quiz-container">
       <h1>City Beauty</h1>
+      {!isQuizCompleted && (
       <div className="progress-container">
       <div className="progress-bar">
         <div style={{ 
@@ -122,6 +124,7 @@ const startQuiz = () => {
       </div>
       <h3>{currentQuestion + 1}/{questions.length}</h3>
       </div>
+      )}
       {currentQuestion < questions.length ? (
         <div>
           <h2>{questions[currentQuestion].question}</h2>
